@@ -328,3 +328,9 @@ names: ['person', 'car', 'dog']
 
 
 ### Детекция палеофауны
+
+## Ссылки на данные
+https://www.kaggle.com/datasets/bolg4rin/honey-badger-dataset <p>
+https://universe.roboflow.com/aleksandr-2oaxq/test_it
+## Лицензия
+Этот проект распространяется под лицензией MIT. Подробности см. в файле `LICENSE`.
