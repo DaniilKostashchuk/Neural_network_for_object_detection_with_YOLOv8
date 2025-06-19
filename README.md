@@ -88,23 +88,23 @@ def train_yolov8(data_root='data', class_names=['object'], epochs=100):
     
     # Обучение модели
     results = model.train(
-        data=data_yaml_path,
-        epochs=epochs,
-        batch=8,
-        imgsz=640,
-        device=device,
-        workers=4,
-        lr0=0.01,
-        weight_decay=0.0005,
-        project='runs/train',
-        name='exp',
-        exist_ok=True,
-        patience=50,
-        box=0.05,
-        cls=0.5,
-        kobj=1.0,
-        iou=0.2,
-        seed=42
+    data=data_yaml_path,    # конфиг датасета
+    epochs=epochs,          # 100 эпох
+    batch=16,               # 16 изображений в батче
+    imgsz=1024,             # размер изображения 1024x1024
+    device=device,          # обучение на GPU 0
+    workers=4,              # 4 потока для загрузки данных
+    lr0=0.01,               # начальный learning rate
+    weight_decay=0.0005,    # L2-регуляризация
+    project="runs/train",   # папка для сохранения
+    name="exp",             # имя эксперимента
+    exist_ok=True,          # перезаписывать папку, если она есть
+    patience=50,            # ранняя остановка после 50 эпох без улучшений
+    box=0.05,               # вес лосса для боксов
+    cls=0.5,                # вес лосса для классификации
+    kobj=1.0,               # вес лосса для уверенности в объекте
+    iou=0.2,                # порог IoU для NMS
+    seed=42                 # фиксированный seed
     )
     
     # Путь к лучшей модели
