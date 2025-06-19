@@ -90,7 +90,7 @@ def train_yolov8(data_root='data', class_names=['object'], epochs=100):
     results = model.train(
     data=data_yaml_path,    # конфиг датасета
     epochs=epochs,          # количество эпох
-    batch=16,               # 16 изображений в батче
+    batch=16,               # количество изображений в батче
     imgsz=1024,             # размер изображения 1024x1024
     device=device,          # обучение на GPU 0
     workers=4,              # 4 потока для загрузки данных
