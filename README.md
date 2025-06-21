@@ -325,9 +325,41 @@ names: ['person', 'car', 'dog']
 
 ## Примеры использования
 ### Детекция медоедов 
+__Графики метрик:__
+![training_metrics](https://github.com/user-attachments/assets/f7b661c1-7d6f-477c-a20a-b9ceeac6ee00)
+__Сonfusion matrix:__
+![confusion_matrix](https://github.com/user-attachments/assets/2f7229ab-b3ae-4a57-8385-01fed7aec00f)
+__Validation set:__ <p>
+labels:
+![val_batch0_labels](https://github.com/user-attachments/assets/5fc0ea91-03be-4555-959e-e07cacca349e)
+predict:
+![val_batch0_pred](https://github.com/user-attachments/assets/514c998a-229c-44df-be4c-e4451e0d5982)
+
+__Test image:__ <p>
+Green - real box<p>
+Red - predict box
+![annotated_36a2cbc9-22](https://github.com/user-attachments/assets/84b5d88b-3017-44ee-a9a1-489cbbd657f5)
+![annotated_9ce54890-37](https://github.com/user-attachments/assets/370c3d25-ee90-483b-871d-8add2eb086d1)
 
 
 ### Детекция палеофауны
+__Графики метрик:__
+![training_metrics](https://github.com/user-attachments/assets/2ed29156-6932-465e-823e-87fe2c4eeb0f)
+__Сonfusion matrix:__
+![confusion_matrix](https://github.com/user-attachments/assets/fb491f03-eb44-4377-90aa-6b45109704a8)
+__Validation set:__ <p>
+labels:
+![val_batch1_labels](https://github.com/user-attachments/assets/328f9475-ee4d-44c3-8ed5-b79c4e14eab3)
+predict:
+![val_batch1_pred](https://github.com/user-attachments/assets/2a5dedfd-6976-4936-8f76-b5bc19ee1112)
+
+__Test image:__ <p>
+Green - real box<p>
+Red - predict box<p>
+![annotated_2R_30_1_jpg rf 4dd1c0d786cbc5951a000a81bef23842](https://github.com/user-attachments/assets/b0ad3e75-6832-4174-8162-fc63fb7817d8)
+![annotated_112_38_3_jpg rf d2d24bf79f805ce77a6f1fc13f01b5d3](https://github.com/user-attachments/assets/983dfd0b-a270-45f0-a15d-d8b6e7054e67)
+![annotated_prb93_jpg rf 8bfc9f8532019a19d408ec92a8519a59](https://github.com/user-attachments/assets/49adb872-5ff3-42aa-aa55-ac51945dd322)
+![annotated_83__jpg rf 4deae210387421bc3fc3336e914eecdc](https://github.com/user-attachments/assets/9a1ce49b-a6d7-46e9-83b8-87b0cfc3c312)
 
 ## Ссылки на данные
 https://www.kaggle.com/datasets/bolg4rin/honey-badger-dataset <p>
